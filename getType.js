@@ -1,6 +1,6 @@
 function getType(value) {
-  const rawType = Object.prototype.toString.call(value);
-  return rawType.slice(8, -1); // Extracts "Set", "Map", etc. from "[object Set]"
+  // Extracts "Set", "Map", etc. from "[object Set]"
+  return Object.prototype.toString.call(value).slice(8, -1);
 }
 
 // Test cases
