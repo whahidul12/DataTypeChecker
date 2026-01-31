@@ -3,7 +3,7 @@ function getType(value) {
   return Object.prototype.toString.call(value).slice(8, -1);
 }
 
-// Test cases
+// Test cases for Types
 console.log(getType(123));                   // "Number"
 console.log(getType("Hello"));               // "String"
 console.log(getType(true));                  // "Boolean"
