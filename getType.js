@@ -1,5 +1,5 @@
 function getType(value) {
-  // Extracts "Set", "Map", etc. from "[object Set]"
+  // Extracts "Set", "Map", etc. from "[object Set Map]"
   return Object.prototype.toString.call(value).slice(8, -1);
 }
 
